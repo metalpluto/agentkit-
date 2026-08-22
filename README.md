@@ -1,8 +1,6 @@
 # agentkit
 
-A minimal, extensible framework for building tool-using AI agents. No hidden
-magic, no heavyweight dependency tree just an LLM-agnostic core, a simple
-tool interface, and a think-act loop you can actually read in one sitting.
+A minimal, extensible framework for building tool-using AI agents.
 
 ## Why this exists
 
