@@ -1,7 +1,7 @@
 # agentkit
 
 A minimal, extensible framework for building tool-using AI agents. No hidden
-magic, no heavyweight dependency tree — just an LLM-agnostic core, a simple
+magic, no heavyweight dependency tree just an LLM-agnostic core, a simple
 tool interface, and a think-act loop you can actually read in one sitting.
 
 ## Why this exists
@@ -9,7 +9,7 @@ tool interface, and a think-act loop you can actually read in one sitting.
 Most agent frameworks bury the core loop under layers of abstraction. This
 one keeps it small on purpose:
 
-- **~250 lines of core code** across 4 files (`agent.py`, `llm.py`, `tools.py`, `memory.py`)
+- **~ 250 lines of core code** across 4 files (`agent.py`, `llm.py`, `tools.py`, `memory.py`)
 - **Provider-agnostic** — the agent talks to an `LLMProvider` interface, not a specific vendor SDK
 - **Two ways to define tools** — a `@tool` decorator for quick functions, or a `Tool` base class for stateful ones
 - **No required backend services** — memory is in-process by default; swap in your own store if you need persistence
@@ -94,7 +94,7 @@ agentkit/
 └── requirements.txt
 ```
 
-## Defining tools
+ ## Defining tools
 
 **Quick, stateless tools** — use the decorator; the schema is inferred from type hints and the docstring:
 
@@ -159,8 +159,8 @@ python tests/test_agent.py
 - [ ] Multi-agent orchestration (agents calling agents)
 - [ ] Persistent memory backends (SQLite, vector store)
 - [ ] Async support
-- [ ] Built-in retry/backoff for rate limits
+- [ ] Built in retry/backoff for rate limits
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT see [LICENSE](LICENSE)
