@@ -94,7 +94,7 @@ agentkit/
 
  ## Defining tools
 
-**Quick, stateless tools** — use the decorator; the schema is inferred from type hints and the docstring:
+**Quick, stateless tools** — use the decorator, the schema is inferred from type hints and the docstring
 
 ```python
 @tool
