@@ -40,16 +40,16 @@ class LLMProvider(abc.ABC):
         raise NotImplementedError
 
 
-class AnthropicProvider(LLMProvider):
-    """Default provider backed by the Anthropic API."""
+class GeminiProvider(LLMProvider):
+    """Default provider backed by the GOOGLE GEMINI API"""
 
-    def __init__(self, model: str = "claude-sonnet-4-6", api_key: str | None = None):
+    def __init__(self, model: str = "gemini-3.5-flash", api_key: str | None = None):
         try:
             import anthropic
         except ImportError as e:
             raise ImportError(
-                "The 'anthropic' package is required for AnthropicProvider. "
-                "Install it with: pip install anthropic"
+                "The 'google-generativeai' package is required for GeminiProvider. "
+                "Install it with: pip install google-generativeai"
             ) from e
 
         self.model = model
